@@ -1,0 +1,58 @@
+# Robots.txt for Dr. Gretchen Kubacky - The Irreverent Transpersonal Psychologist
+# Website: https://gretchenkubacky.com
+
+User-agent: *
+Allow: /
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+Disallow: /api/
+Disallow: /_next/
+Disallow: /node_modules/
+
+# Healthcare-specific considerations
+# Allow health-related content but be mindful of patient privacy
+Allow: /services
+Allow: /about
+Allow: /blog
+Allow: /contact
+Allow: /resources
+Allow: /privacy
+Allow: /terms
+Allow: /disclaimer
+
+# Block any patient-related or confidential areas
+Disallow: /patient/
+Disallow: /client/
+Disallow: /secure/
+Disallow: /confidential/
+
+# Allow sitemap
+Sitemap: https://gretchenkubacky.com/sitemap.xml
+
+# Crawl delay for respectful crawling (in seconds)
+Crawl-delay: 1
+
+# Cache directive for robots.txt itself
+# This file should be checked periodically for updates

@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+  --font-display: var(--font-dm-serif);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Theme-specific root classes */
+[data-theme="mystical"] {
+  --theme-primary: theme('colors.mystical.primary.600');
+  --theme-secondary: theme('colors.mystical.secondary.500');
+  --theme-accent: theme('colors.mystical.accent');
+}
+
+[data-theme="calming"] {
+  --theme-primary: theme('colors.calming.primary.600');
+  --theme-secondary: theme('colors.calming.secondary.500');
+  --theme-accent: theme('colors.calming.accent');
+}
+
+[data-theme="earthy"] {
+  --theme-primary: theme('colors.earthy.primary.600');
+  --theme-secondary: theme('colors.earthy.secondary.500');
+  --theme-accent: theme('colors.earthy.accent');
+}
+
+/* Smooth transitions for theme changes */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
