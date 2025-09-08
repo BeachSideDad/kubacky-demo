@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from '@/app/contexts/ThemeContext';
 import LoadingSpinner from '@/app/components/ui/LoadingSpinner';
+import Link from 'next/link';
+import Image from 'next/image';
 
 interface BlogPost {
   id: string;
@@ -199,7 +201,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         }
 
         setBlogPost(post);
-      } catch (err) {
+      } catch {
         setError('Failed to load blog post');
       } finally {
         setLoading(false);
@@ -233,11 +235,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 {error || 'Blog post not found'}
               </h1>
               <p className={`${styles.text} mb-6`}>
-                The blog post you're looking for doesn't exist or couldn't be loaded.
+                The blog post you&apos;re looking for doesn&apos;t exist or couldn&apos;t be loaded.
               </p>
-              <a href="/" className={`${styles.link} font-medium`}>
+              <Link href="/" className={`${styles.link} font-medium`}>
                 ← Back to Home
-              </a>
+              </Link>
             </div>
           </div>
         </div>

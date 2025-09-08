@@ -70,7 +70,7 @@ export default class ErrorBoundary extends Component<Props, State> {
             </h2>
             
             <p className="text-gray-600 mb-6">
-              We're sorry, but something unexpected happened. The page has encountered an error and can't be displayed properly.
+              We&apos;re sorry, but something unexpected happened. The page has encountered an error and can&apos;t be displayed properly.
             </p>
 
             {process.env.NODE_ENV === 'development' && this.state.error && (
