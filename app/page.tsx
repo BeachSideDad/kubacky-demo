@@ -9,11 +9,21 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <ServicesSection />
-      <AboutSection />
-      <ContentHub />
+      <div id="clinical" className="scroll-mt-20">
+        <ServicesSection />
+      </div>
+      <div id="wellness" className="scroll-mt-20" />
+      <div id="salon" className="scroll-mt-20" />
+      <div id="about" className="scroll-mt-20">
+        <AboutSection />
+      </div>
+      <div id="content" className="scroll-mt-20">
+        <ContentHub />
+      </div>
       <NewsletterSignup />
-      <ContactSection />
+      <div id="contact" className="scroll-mt-20">
+        <ContactSection />
+      </div>
     </>
   );
 }
