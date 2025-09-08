@@ -335,7 +335,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
               {/* Navigation */}
               <div className={`mt-12 pt-8 border-t ${styles.border} text-center`}>
-                <a
+                <Link
                   href="/#content"
                   className={`${styles.link} font-medium inline-flex items-center`}
                 >
@@ -343,7 +343,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                   </svg>
                   Back to Content Hub
-                </a>
+                </Link>
               </div>
             </div>
           </div>
