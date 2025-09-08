@@ -66,21 +66,21 @@ export default function AboutSection() {
             <div className={`md:col-span-2 ${styles.card} p-8 rounded-lg border backdrop-blur-sm`}>
               <div className="space-y-6">
                 <p className={`${styles.text} leading-relaxed`}>
-                  I'm not your typical psychologist. While I hold a doctorate in Clinical Psychology and am 
-                  licensed in California, I've never been one to color inside the lines of conventional practice. 
+                  I&apos;m not your typical psychologist. While I hold a doctorate in Clinical Psychology and am 
+                  licensed in California, I&apos;ve never been one to color inside the lines of conventional practice. 
                   My journey has taken me from the sterile halls of academia into the mystical realms where 
                   psychology meets spirituality.
                 </p>
                 
                 <p className={`${styles.text} leading-relaxed`}>
-                  For over a decade, I've been bridging two worlds that many say don't belong together: 
+                  For over a decade, I&apos;ve been bridging two worlds that many say don&apos;t belong together: 
                   evidence-based clinical psychology and transpersonal healing practices. I specialize in 
                   PCOS-related mental health challenges, having lived the experience myself and understanding 
                   the unique intersection of hormones, identity, and psychological wellbeing.
                 </p>
                 
                 <p className={`${styles.text} leading-relaxed`}>
-                  My practice operates on a dual model because I believe healing isn't one-size-fits-all. 
+                  My practice operates on a dual model because I believe healing isn&apos;t one-size-fits-all. 
                   Some need the structure and evidence base of traditional therapy. Others are ready to 
                   explore the deeper mysteries of consciousness and energy. Many need both, at different 
                   times in their journey.
@@ -117,9 +117,9 @@ export default function AboutSection() {
           {/* Philosophy Quote */}
           <div className={`${styles.quote} border-l-4 bg-opacity-20 p-6 rounded-r-lg`}>
             <blockquote className={`${styles.text} text-lg italic font-light mb-4`}>
-              "I don't believe we have to choose between rigorous science and profound spirituality. 
+              &ldquo;I don&apos;t believe we have to choose between rigorous science and profound spirituality. 
               The most transformative healing happens when we honor both the complexity of the human 
-              psyche and the mystery of consciousness itself."
+              psyche and the mystery of consciousness itself.&rdquo;
             </blockquote>
             <cite className={`${styles.accent} font-medium`}>— Dr. Kubacky</cite>
           </div>
@@ -127,7 +127,7 @@ export default function AboutSection() {
           {/* Personal Touch */}
           <div className="mt-12 text-center">
             <p className={`${styles.text} max-w-2xl mx-auto`}>
-              When I'm not in session or writing, you'll find me exploring the intersections of 
+              When I&apos;m not in session or writing, you&apos;ll find me exploring the intersections of 
               consciousness, diving deep into the latest research on trauma and resilience, or 
               facilitating healing circles where science meets soul.
             </p>

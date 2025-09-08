@@ -1,6 +1,7 @@
 'use client';
 
 import React, { Component, ErrorInfo, ReactNode } from 'react';
+import Link from 'next/link';
 
 interface Props {
   children?: ReactNode;
@@ -94,12 +95,12 @@ export default class ErrorBoundary extends Component<Props, State> {
                 Try Again
               </button>
               
-              <a
+              <Link
                 href="/"
                 className="block w-full bg-gray-100 text-gray-700 px-4 py-2 rounded-md font-medium hover:bg-gray-200 transition-colors"
               >
                 Go to Homepage
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -207,7 +208,7 @@ export function ThemedErrorBoundary({
         </h2>
         
         <p className={`${styles.text} mb-6`}>
-          We're sorry, but something unexpected happened. Please try refreshing the page or contact us if the problem persists.
+          We&apos;re sorry, but something unexpected happened. Please try refreshing the page or contact us if the problem persists.
         </p>
 
         <div className="space-y-3">
@@ -218,12 +219,12 @@ export function ThemedErrorBoundary({
             Refresh Page
           </button>
           
-          <a
+          <Link
             href="/"
             className={`block w-full ${styles.secondaryButton} px-4 py-2 rounded-md font-medium transition-colors`}
           >
             Go to Homepage
-          </a>
+          </Link>
         </div>
       </div>
     </div>

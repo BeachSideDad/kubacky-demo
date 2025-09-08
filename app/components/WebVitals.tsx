@@ -10,8 +10,8 @@ export default function WebVitals() {
       import('web-vitals').then(({ onCLS, onINP, onFCP, onLCP, onTTFB }) => {
         const sendToAnalytics = (metric: Metric) => {
           // Send to analytics service (Google Analytics, PostHog, etc.)
-          if (typeof window !== 'undefined' && (window as any).gtag) {
-            (window as any).gtag('event', metric.name, {
+          if (typeof window !== 'undefined' && (window as unknown as { gtag?: Function }).gtag) {
+            (window as unknown as { gtag: Function }).gtag('event', metric.name, {
               custom_parameter_1: metric.id,
               custom_parameter_2: metric.name,
               custom_parameter_3: Math.round(metric.name === 'CLS' ? metric.value * 1000 : metric.value),
@@ -49,8 +49,8 @@ export const reportWebVitals = (metric: Metric) => {
   // Send to external analytics if configured
   if (process.env.NODE_ENV === 'production') {
     // Example: Send to Google Analytics
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', name, {
+    if (typeof window !== 'undefined' && (window as unknown as { gtag?: Function }).gtag) {
+      (window as unknown as { gtag: Function }).gtag('event', name, {
         event_category: 'Web Vitals',
         event_label: id,
         value: Math.round(name === 'CLS' ? value * 1000 : value),

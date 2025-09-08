@@ -161,7 +161,7 @@ export default function NewsletterSignup() {
                 The Irreverent Newsletter
               </h2>
               <p className={`${styles.text} text-lg`}>
-                Where psychology meets mysticism, and we don't pretend they're the same thing.
+                Where psychology meets mysticism, and we don&apos;t pretend they&apos;re the same thing.
               </p>
             </div>
 
